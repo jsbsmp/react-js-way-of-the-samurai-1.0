@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-js-way-of-the-samurai-1.0/static/css/main.29839eea.css",
-    "main.js": "/react-js-way-of-the-samurai-1.0/static/js/main.6716b24e.js",
+    "main.css": "/react-js-way-of-the-samurai-1.0/static/css/main.85126c31.css",
+    "main.js": "/react-js-way-of-the-samurai-1.0/static/js/main.dc781b33.js",
     "static/js/453.c3db55c9.chunk.js": "/react-js-way-of-the-samurai-1.0/static/js/453.c3db55c9.chunk.js",
     "static/css/752.a1295ad1.chunk.css": "/react-js-way-of-the-samurai-1.0/static/css/752.a1295ad1.chunk.css",
     "static/js/752.2029b0a7.chunk.js": "/react-js-way-of-the-samurai-1.0/static/js/752.2029b0a7.chunk.js",
     "static/media/spinner.svg": "/react-js-way-of-the-samurai-1.0/static/media/spinner.6828c49c70e46a12771adc42819693b8.svg",
     "static/media/user.svg": "/react-js-way-of-the-samurai-1.0/static/media/user.91a06fb30c2b982aa7cf8218978f376c.svg",
     "index.html": "/react-js-way-of-the-samurai-1.0/index.html",
-    "main.29839eea.css.map": "/react-js-way-of-the-samurai-1.0/static/css/main.29839eea.css.map",
-    "main.6716b24e.js.map": "/react-js-way-of-the-samurai-1.0/static/js/main.6716b24e.js.map",
+    "main.85126c31.css.map": "/react-js-way-of-the-samurai-1.0/static/css/main.85126c31.css.map",
+    "main.dc781b33.js.map": "/react-js-way-of-the-samurai-1.0/static/js/main.dc781b33.js.map",
     "453.c3db55c9.chunk.js.map": "/react-js-way-of-the-samurai-1.0/static/js/453.c3db55c9.chunk.js.map",
     "752.a1295ad1.chunk.css.map": "/react-js-way-of-the-samurai-1.0/static/css/752.a1295ad1.chunk.css.map",
     "752.2029b0a7.chunk.js.map": "/react-js-way-of-the-samurai-1.0/static/js/752.2029b0a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29839eea.css",
-    "static/js/main.6716b24e.js"
+    "static/css/main.85126c31.css",
+    "static/js/main.dc781b33.js"
   ]
 }
