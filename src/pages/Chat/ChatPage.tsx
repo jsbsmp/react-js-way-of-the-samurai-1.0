@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react';
 
 const { TextArea } = Input;
 
-let ws: WebSocket | null = null;
-
 export type ChatMessageType = {
     message: string
     photo: string
@@ -22,13 +20,31 @@ const Chat: React.FC = () => {
     const [wsChannel, setWsChannel] = useState<WebSocket | null>(null);
 
     useEffect(() => {
-        ws = new WebSocket('wss://social-network.samuraijs.com/handlers/ChatHandler.ashx');
-        setWsChannel(ws);
+        let ws: WebSocket;
+        const closeHandler = () => {
+            console.log('WebSocket closed. Reconnecting...')
+            setTimeout(createChannel, 3000);
+        }
+        function createChannel() {
+            ws?.removeEventListener('close', closeHandler);
+            ws?.close();
+            ws = new WebSocket('wss://social-network.samuraijs.com/handlers/ChatHandler.ashx');
+            ws.addEventListener('close', closeHandler);
+            setWsChannel(ws);
+        }
+        createChannel();
 
         return () => {
-            ws?.close();
+            ws.removeEventListener('close', closeHandler);
+            ws.close();
         }
     }, []);
+
+    useEffect(() => {
+        wsChannel?.addEventListener('close', () => {
+            console.log('WebSocket closed. Reconnecting...')
+        })
+    }, [wsChannel]);
 
 
     return <div>

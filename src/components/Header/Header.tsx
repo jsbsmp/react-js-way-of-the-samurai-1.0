@@ -1,5 +1,5 @@
 import { UserOutlined } from '@ant-design/icons';
-import { Avatar, Button, Col, Layout, Menu, Row } from 'antd';
+import { Avatar, Button, Layout, Menu } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { logout } from '../../redux/auth-reducer';
@@ -41,13 +41,5 @@ export const Header: React.FC<MapPropsType> = (props) => {
                 : <Button><Link to={'/login'}>Login</Link></Button>}
 
         </Header >
-
-        // <header className={classes.header}>
-        //     <NavLink to={'/'}><img src='https://toppng.com/uploads/preview/design-for-logo-11549988276bxsuzsd1y1.png' alt='Logo'></img></NavLink>
-
-        //     <div className={classes.loginBlock}>
-        //         {props.isAuth ? <div>{props.login} - <button onClick={props.logout}>Logout</button></div> : <NavLink to={'/login'}>Login</NavLink>}
-        //     </div>
-        // </header>
     )
 }
